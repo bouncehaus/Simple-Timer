@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Timer</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="timer-container">
+            <h1><i class="fa-solid fa-clock"></i> Timer</h1>
+
+            <div class="d-flex-inline mt-20">
+                <div class="d-flex-block">
+                    <label for="hours">Hours</label>
+                    <input type="number" id="hours" min="0" placeholder="0">
+                </div>
+
+                <div class="d-flex-block">
+                    <label for="minutes">Minutes</label>
+                    <input type="number" id="minutes" min="0" placeholder="0">
+                </div>
+
+                <div class="d-flex-block">
+                    <label for="seconds">Seconds</label>
+                    <input type="number" id="seconds" min="0" placeholder="0">
+                </div>
+                </div>
+
+        <div class="d-flex-inline mt-5">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+            </div>
+
+        <h1 id="timer" class="mt-20">00:00:00</h1>
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
